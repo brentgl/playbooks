@@ -1,0 +1,4 @@
+- hosts:
+    - ubuntu
+  tasks:
+    - action: ping
