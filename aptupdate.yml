@@ -19,3 +19,4 @@
     shell: apt remove -y --purge $(dpkg -l | grep "^rc\s*linux-image-" | awk '{print $2}' | tr '\n' ' ')
     register: apt_result
     changed_when: "'packages will be REMOVED' in apt_result.stdout"
+
